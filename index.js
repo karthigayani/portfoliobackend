@@ -40,7 +40,7 @@ app.use("/", router.post("/Contact", (req, res) => {
   const message = req.body.message;
   const phone = req.body.phone;
   const mail = {
-    from:process.env.USER,
+    from:name,
     to: "karthi1826@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
