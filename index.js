@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 // app.use("/", router);
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log("Server Running"));
 // console.log(process.env.USER);
 // console.log(process.env.PASSWORD);
